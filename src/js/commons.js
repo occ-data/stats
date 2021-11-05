@@ -7,16 +7,16 @@ function addTotals() {
   $( ".total-count-card").remove();
   $( "#header" ).append(`
     <div class="total-count-card">
-      <div class="total-count-card__number">${numberWithCommas(aggSubject)}</div>
-      <div class="total-count-card__text">Total Subjects</div>
+      <div class="total-count-card__number header-text">${numberWithCommas(aggSubject)}</div>
+      <div class="total-count-card__text header-text">Total Subjects</div>
     </div>
     <div class="total-count-card">
-      <div class="total-count-card__number">${numberWithCommas(aggFiles)}</div>
-      <div class="total-count-card__text">Total Files</div>
+      <div class="total-count-card__number header-text">${numberWithCommas(aggFiles)}</div>
+      <div class="total-count-card__text header-text">Total Files</div>
     </div>
     <div class="total-count-card">
-      <div class="total-count-card__number">${humanFileSize(aggFileSize)}</div>
-      <div class="total-count-card__text">Total File Size</div>
+      <div class="total-count-card__number header-text">${humanFileSize(aggFileSize)}</div>
+      <div class="total-count-card__text header-text ">Total File Size</div>
     </div>
   `);
 }
@@ -34,7 +34,6 @@ function humanFileSize(size) {
 
 function getCommonHTML(commonAbbv, title, logoHrefLink, subjectCount, clinicalAttributeCount, indexdFileCount, indexdFileSize) {
   return `
-  <div class="card common-card text-center">
     <div>
       <a href="${logoHrefLink}" target="_blank" class="common-card__logo-wrapper">
         <img src="src/img/commons_logos/${commonAbbv}.png" class="card-img-top common-card__logo" alt="${commonAbbv} logo">
@@ -49,7 +48,6 @@ function getCommonHTML(commonAbbv, title, logoHrefLink, subjectCount, clinicalAt
         <p class="common-card__info"><span class="col-6 common-card__text--left">Total Size </span><span class="common-card__number col-6 common-card__text--right">${humanFileSize(indexdFileSize)}</span></p>
       </div>
     </div>
-  </div>
   `;
 }
 
@@ -63,7 +61,8 @@ function createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionar
     aggClinicalAttrs += clinicalAttributeCount;
     aggFiles += indexdData.fileCount;
     aggFileSize += indexdData.totalFileSize;
-    $( "#main" ).append(getCommonHTML(
+    $( "#main" ).find("#"+ abbv).find(".loader").hide();
+    $( "#main" ).find("#"+ abbv).append(getCommonHTML(
       abbv,
       title,
       logoHrefLink,
@@ -76,6 +75,7 @@ function createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionar
     aggSubject = aggSubject + subjectCount ;
     aggFiles = aggFiles + indexdData.fileCount;
     aggFileSize = aggFileSize + indexdData.totalFileSize;
+
     addTotals();
   });
 }
@@ -95,10 +95,10 @@ function addCommons(abbv, logoHrefLink, indexdEndpoint, dictionaryEndpoint, titl
 
 $(document).ready(function() {
   // (abbreviation, URL, indexd stats endpoint, dictionary endpoint, title (optional))
-  addCommons("bloodpac", "https://data.bloodpac.org", "https://data.bloodpac.org/index/_stats", "https://data.bloodpac.org/api/v0/submission/_dictionary/_all");
+  addCommons("vpodc", "https://vpodc.org", "https://vpodc.org/index/_stats", "https://vpodc.org/api/v0/submission/_dictionary/_all");
   addCommons("covid19", "https://chicagoland.pandemicresponsecommons.org", "https://chicagoland.pandemicresponsecommons.org/index/_stats", "https://chicagoland.pandemicresponsecommons.org/api/v0/submission/_dictionary/_all");
+  addCommons("bloodpac", "https://data.bloodpac.org", "https://data.bloodpac.org/index/_stats", "https://data.bloodpac.org/api/v0/submission/_dictionary/_all");
   addCommons("edc", "https://portal.occ-data.org", "https://portal.occ-data.org/index/_stats", "https://portal.occ-data.org/api/v0/submission/_dictionary/_all");
   addCommons("canine", "https://caninedc.org", "https://caninedc.org/index/_stats", "https://caninedc.org/api/v0/submission/_dictionary/_all");
-  addCommons("vpodc", "https://vpodc.org", "https://vpodc.org/index/_stats", "https://vpodc.org/api/v0/submission/_dictionary/_all");
   addCommons("vadc", "https://va.data-commons.org/", "https://va.data-commons.org/index/_stats", "https://va.data-commons.org/api/v0/submission/_dictionary/_all");
   });
