@@ -5,7 +5,7 @@ let aggSubject = 0;
 
 function addTotals() {
   $( ".total-count-card").remove();
-  $( "#header" ).append(`
+  $( "#header_bar" ).append(`
     <div class="total-count-card">
       <div class="total-count-card__number header-text">${numberWithCommas(aggSubject)}</div>
       <div class="total-count-card__text header-text">Total Subjects</div>
@@ -36,7 +36,7 @@ function getCommonHTML(commonAbbv, title, logoHrefLink, subjectCount, clinicalAt
   return `
     <div>
       <a href="${logoHrefLink}" target="_blank" class="common-card__logo-wrapper">
-        <img src="src/img/commons_logos/${commonAbbv}.png" class="card-img-top common-card__logo" alt="${commonAbbv} logo">
+        <img src="https://occ-data.github.io/stats/src/img/commons_logos/${commonAbbv}.png" class="card-img-top common-card__logo" alt="${commonAbbv} logo">
       </a>
     </div>
     <div class="card-body">
