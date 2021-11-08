@@ -7,16 +7,16 @@ function addTotals() {
   $( ".total-count-card").remove();
   $( "#header_bar" ).append(`
     <div class="total-count-card">
-      <div class="total-count-card__number header-text">${numberWithCommas(aggSubject)}</div>
-      <div class="total-count-card__text header-text">Total Subjects</div>
+      <div class="total-count-card__number">${numberWithCommas(aggSubject)}</div>
+      <div class="total-count-card__text">Total Subjects</div>
     </div>
     <div class="total-count-card">
-      <div class="total-count-card__number header-text">${numberWithCommas(aggFiles)}</div>
-      <div class="total-count-card__text header-text">Total Files</div>
+      <div class="total-count-card__number">${numberWithCommas(aggFiles)}</div>
+      <div class="total-count-card__text">Total Files</div>
     </div>
     <div class="total-count-card">
-      <div class="total-count-card__number header-text">${humanFileSize(aggFileSize)}</div>
-      <div class="total-count-card__text header-text ">Total File Size</div>
+      <div class="total-count-card__number">${humanFileSize(aggFileSize)}</div>
+      <div class="total-count-card__text">Total File Size</div>
     </div>
   `);
 }
