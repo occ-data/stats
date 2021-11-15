@@ -71,7 +71,7 @@ function createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionar
       indexdData.fileCount,
       indexdData.totalFileSize,
     ));
-    subjectCount = isNaN(parseInt(subjectCounts[abbv])) ? 0 : parseInt(subjectCounts[abbv]);
+    subjectCount = isNaN(parseInt(subjectCounts[abbv])) ? 0 : parseInt(subjectCounts[abbv].split(",").join(""));
     aggSubject = aggSubject + subjectCount ;
     aggFiles = aggFiles + indexdData.fileCount;
     aggFileSize = aggFileSize + indexdData.totalFileSize;
