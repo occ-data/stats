@@ -95,7 +95,7 @@ function addCommons(abbv, logoHrefLink, indexdEndpoint, dictionaryEndpoint, titl
 
 $(document).ready(function() {
   // (abbreviation, URL, indexd stats endpoint, dictionary endpoint, title (optional))
-  addCommons("vpodc", "https://vpodc.org", "https://vpodc.org/index/_stats", "https://vpodc.org/api/v0/submission/_dictionary/_all");
+  addCommons("vpodc", "https://vpodc.data-commons.org", "https://vpodc.data-commons.org/index/_stats", "https://vpodc.data-commons.org/api/v0/submission/_dictionary/_all");
   addCommons("covid19", "https://chicagoland.pandemicresponsecommons.org", "https://chicagoland.pandemicresponsecommons.org/index/_stats", "https://chicagoland.pandemicresponsecommons.org/api/v0/submission/_dictionary/_all");
   addCommons("bloodpac", "https://data.bloodpac.org", "https://data.bloodpac.org/index/_stats", "https://data.bloodpac.org/api/v0/submission/_dictionary/_all");
   addCommons("edc", "https://portal.occ-data.org", "https://portal.occ-data.org/index/_stats", "https://portal.occ-data.org/api/v0/submission/_dictionary/_all");
