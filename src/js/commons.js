@@ -83,13 +83,12 @@ function createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionar
 function addCommons(abbv, logoHrefLink, indexdEndpoint, dictionaryEndpoint, title="") {
   // only fetch from indexd endpoint if there is no local data cache in indexdCounts.js
   // to prevent issue of a slow IndexD in some envs
-
+  const indexdData = indexdCounts[abbv];
   if (!indexdData) {
   $.getJSON(indexdEndpoint, function(indexdData) {
     createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionaryEndpoint)
   });
   } else {
-    const indexdData = indexdCounts[abbv];
     createHTMLByIndexdData(abbv, title, logoHrefLink, indexdCounts[abbv], dictionaryEndpoint)
   }
 }
