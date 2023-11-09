@@ -80,17 +80,17 @@ function createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionar
   });
 }
 
-function addCommons(abbv, logoHrefLink, indexdEndpoint, dictionaryEndpoint, title="") {
+async function addCommons(abbv, logoHrefLink, indexdEndpoint, dictionaryEndpoint, section, title="",) {
   // only fetch from indexd endpoint if there is no local data cache in indexdCounts.js
   // to prevent issue of a slow IndexD in some envs
-
+  const indexdData = indexdCountsCache[abbv];
   if (!indexdData) {
-  $.getJSON(indexdEndpoint, function(indexdData) {
-    createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionaryEndpoint)
-  });
+    $.getJSON(indexdEndpoint, function(indexdData) {
+      indexdCountsCache[abbv] = indexdData;
+      createHTMLByIndexdData(abbv, title, logoHrefLink, indexdData, dictionaryEndpoint, section)
+    });
   } else {
-    const indexdData = indexdCounts[abbv];
-    createHTMLByIndexdData(abbv, title, logoHrefLink, indexdCounts[abbv], dictionaryEndpoint)
+    createHTMLByIndexdData(abbv, title, logoHrefLink, indexdCountsCache[abbv], dictionaryEndpoint, section)
   }
 }
 
