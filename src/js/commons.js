@@ -5,7 +5,7 @@ let aggSubjectCount = 0;
 
 function displayTotals() {
   $(".total-count-card").remove();
-  $("#header").append(`
+  $("#header_bar").append(`
     <div class="total-count-card">
       <div class="total-count-card__number">${numberWithCommas(aggSubjectCount)}</div>
       <div class="total-count-card__text">Total Subjects</div>
@@ -56,7 +56,7 @@ async function addCommons(abbv, logoHrefLink, dictionaryEndpoint, subjectCount, 
     let html = `
     <div>
       <a href="${logoHrefLink}" target="_blank" class="common-card__logo-wrapper">
-        <img src="img/logos/${abbv}.png" class="card-img-top common-card__logo" alt="${abbv} logo">
+        <img src="src/img/logos/${abbv}.png" class="card-img-top common-card__logo" alt="${abbv} logo">
       </a>
     </div>
     <div class="card-body">
@@ -79,7 +79,7 @@ function addAggCommons(commonAbbv, logoHrefLink, description, repos, title = "")
   <div class="card common-card text-center">
     <div>
       <a href="${logoHrefLink}" target="_blank" class="common-card__logo-wrapper">
-        <img src="img/logos/${commonAbbv}.png" class="card-img-top common-card__logo" alt="${commonAbbv} logo">
+        <img src="src/img/logos/${commonAbbv}.png" class="card-img-top common-card__logo" alt="${commonAbbv} logo">
       </a>
     </div>
     <div class="card-body">

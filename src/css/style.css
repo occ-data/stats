@@ -22,6 +22,11 @@
     padding-top:calc(0.5rem + 0.3vmin)!important;
     padding-bottom:calc(0.5rem + 0.3vmin) !important;
   }
+
+  #header_bar > a {
+    width:75%;
+  }
+
   .total-count-card{
     margin:0 !important;
   }
@@ -36,7 +41,7 @@
     /* background: #BDDDF7 !important; */
   }
   .common-card{
-    width: calc(15em + 10vmin) !important;
+    width: calc(30rem + 10vmin) !important;
     padding: 1rem !important;
   }
 .loader {
