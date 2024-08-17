@@ -4,8 +4,8 @@ const instances = {
         "dictionary_endpoint": "https://data.bloodpac.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://data.bloodpac.org/index/_stats",
         "subject_stats_endpoint": "https://data.bloodpac.org/api/search/datasets?nodes=case",
-        "file_count": 35679,
-        "total_file_size": 34853305933603,
+        "file_count": 35681,
+        "total_file_size": 34894831460130,
         "subject_count": 4441
     },
     "canine": {
@@ -29,8 +29,8 @@ const instances = {
         "logo_link": "https://va.data-commons.org/",
         "dictionary_endpoint": "https://va.data-commons.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://va.data-commons.org/index/_stats",
-        "file_count": 14344,
-        "total_file_size": 2379483756364,
+        "file_count": 14654,
+        "total_file_size": 2485117990742,
         "subject_count": 648242
     },
     "vpodc": {
