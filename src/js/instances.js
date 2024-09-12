@@ -29,8 +29,8 @@ const instances = {
         "logo_link": "https://va.data-commons.org/",
         "dictionary_endpoint": "https://va.data-commons.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://va.data-commons.org/index/_stats",
-        "file_count": 15719,
-        "total_file_size": 2667983358805,
+        "file_count": 15769,
+        "total_file_size": 2677491757273,
         "subject_count": 648242
     },
     "vpodc": {
