@@ -96,7 +96,7 @@ function addAggCommons(commonAbbv, logoHrefLink, description, repos, title = "")
 
 document.addEventListener('DOMContentLoaded', async function () {
   // meshes
-  addAggCommons("prom", "https://prometheus.data-commons.org/", "PROMETHEUS is the Project for Military Exposures and Toxin History Evaluation in US Service Members. The Prometheus Data Platform (PDP) is part of the President Biden Cancer Moonshot 2.0, which aims to mobilize a national effort to end cancer as we know it.", 4)
+  addAggCommons("murtha_cancer_center_logo", "http://mc2dp.data-commons.org/", "The vision of Murtha Cancer Center Data Platform (MC2DP) is to integrate federal scientific platforms with public-private innovators revealing the impact of service-related exposures to environmental contaminants and toxin hazards and developing prevention and early detection approaches and advanced treatments of cancers arising from these exposures", 6)
 
   // commons
   for (let [abbreviation, data] of Object.entries(instances)) {

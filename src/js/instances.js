@@ -25,14 +25,6 @@ const instances = {
         "total_file_size": 117637133283369,
         "subject_count": 320124
     },
-    "va": {
-        "logo_link": "https://va.data-commons.org/",
-        "dictionary_endpoint": "https://va.data-commons.org/api/v0/submission/_dictionary/_all",
-        "file_stats_endpoint": "https://va.data-commons.org/index/_stats",
-        "file_count": 17529,
-        "total_file_size": 3017753770803,
-        "subject_count": 648242
-    },
     "vpodc": {
         "logo_link": "https://vpodc.data-commons.org",
         "dictionary_endpoint": "https://vpodc.data-commons.org/api/v0/submission/_dictionary/_all",
