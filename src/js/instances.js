@@ -32,12 +32,5 @@ const instances = {
         "file_count": 352786,
         "total_file_size": 2184859714735,
         "subject_count": 163695
-    },
-    "edc": {
-        "logo_link": "https://portal.occ-data.org",
-        "dictionary_endpoint": "https://portal.occ-data.org/api/v0/submission/_dictionary/_all",
-        "file_stats_endpoint": "https://portal.occ-data.org/index/_stats",
-        "file_count": 33441289,
-        "total_file_size": 99197838516274
     }
 }
