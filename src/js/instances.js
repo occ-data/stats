@@ -23,7 +23,7 @@ const instances = {
         "subject_stats_endpoint": "https://chicagoland.pandemicresponsecommons.org/api/search/datasets?nodes=subject",
         "file_count": 285849,
         "total_file_size": 117637133283369,
-        "subject_count": 320124
+        "subject_count": 439337
     },
     "vpodc": {
         "logo_link": "https://vpodc.data-commons.org",
