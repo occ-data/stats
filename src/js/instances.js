@@ -4,8 +4,8 @@ const instances = {
         "dictionary_endpoint": "https://data.bloodpac.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://data.bloodpac.org/index/_stats",
         "subject_stats_endpoint": "https://data.bloodpac.org/api/search/datasets?nodes=case",
-        "file_count": 36670,
-        "total_file_size": 41496790500291,
+        "file_count": 36679,
+        "total_file_size": 41502865804072,
         "subject_count": 4441
     },
     "canine": {
