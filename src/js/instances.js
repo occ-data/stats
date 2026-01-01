@@ -6,7 +6,7 @@ const instances = {
         "subject_stats_endpoint": "https://data.bloodpac.org/api/search/datasets?nodes=case",
         "file_count": 36689,
         "total_file_size": 41502923045181,
-        "subject_count": 4441
+        "subject_count": 4465
     },
     "canine": {
         "logo_link": "https://caninedc.org",
