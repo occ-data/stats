@@ -6,7 +6,7 @@ const instances = {
         "subject_stats_endpoint": "https://data.bloodpac.org/api/search/datasets?nodes=case",
         "file_count": 36689,
         "total_file_size": 41502923045181,
-        "subject_count": 4465
+        "subject_count": 4466
     },
     "canine": {
         "logo_link": "https://caninedc.org",
@@ -29,8 +29,8 @@ const instances = {
         "logo_link": "https://vpodc.data-commons.org",
         "dictionary_endpoint": "https://vpodc.data-commons.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://vpodc.data-commons.org/index/_stats",
-        "file_count": 353489,
-        "total_file_size": 2185129008900,
+        "file_count": 353493,
+        "total_file_size": 2185134437155,
         "subject_count": 163695
     }
 }
