@@ -4,7 +4,7 @@ const instances = {
         "dictionary_endpoint": "https://data.bloodpac.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://data.bloodpac.org/index/_stats",
         "subject_stats_endpoint": "https://data.bloodpac.org/api/search/datasets?nodes=case",
-        "file_count": 36689,
+        "file_count": 36694,
         "total_file_size": 41502923045181,
         "subject_count": 4466
     },
