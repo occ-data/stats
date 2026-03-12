@@ -12,8 +12,8 @@ const instances = {
         "logo_link": "https://caninedc.org",
         "dictionary_endpoint": "https://caninedc.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://caninedc.org/index/_stats",
-        "file_count": 3820,
-        "total_file_size": 1884253865578,
+        "file_count": 3950,
+        "total_file_size": 1884681951066,
         "subject_count": 1499
     },
     "covid19": {
@@ -29,8 +29,8 @@ const instances = {
         "logo_link": "https://vpodc.data-commons.org",
         "dictionary_endpoint": "https://vpodc.data-commons.org/api/v0/submission/_dictionary/_all",
         "file_stats_endpoint": "https://vpodc.data-commons.org/index/_stats",
-        "file_count": 424500,
-        "total_file_size": 2257651848890,
+        "file_count": 424848,
+        "total_file_size": 2257888369574,
         "subject_count": 163695
     }
 }
